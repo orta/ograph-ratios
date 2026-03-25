@@ -182,6 +182,7 @@ writeFileSync(
       <li><strong>Slack</strong> <span>Allows any aspect ratio</span></li>
       <li><strong>Discord</strong> <span>Any aspect ratio; height appears capped and image right-aligns</span></li>
       <li><strong>Bluesky</strong> <span>Always constrained to ~1.4 ratio</span></li>
+      <li><strong>Twitter</strong> <span>Supports a 2.0 ratio (2:1)</span></li>
     </ul>
   </div>
 </body>
