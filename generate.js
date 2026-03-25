@@ -87,7 +87,7 @@ for (const ratio of ratios) {
 const cards = items
   .map(
     ({ ratio, width, height, folder }) => `
-    <a class="card" href="./${folder}/index.html">
+    <a class="card" href="./${folder}/">
       <div class="img-wrap">
         <img src="./${folder}/image.png" alt="ratio ${ratio.toFixed(1)}" loading="lazy">
       </div>
