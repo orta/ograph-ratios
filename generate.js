@@ -182,8 +182,8 @@ writeFileSync(
     <h2>Platform notes</h2>
     <ul>
       <li><strong>Slack</strong> <span>Allows any aspect ratio</span></li>
-      <li><strong>Discord</strong> <span>Any aspect ratio; height appears capped and image right-aligns</span></li>
-      <li><strong>Bluesky</strong> <span>Always constrained to ~1.4 ratio</span></li>
+      <li><strong>Discord</strong> <span>Any aspect ratio; height appears capped and image left-aligns</span></li>
+      <li><strong>Bluesky</strong> <span>Always constrained to 1200:630</span></li>
       <li><strong>Twitter</strong> <span>Supports a 2.0 ratio (2:1)</span></li>
       <li><strong>Facebook</strong> <span>Uses the aspect ratio to determine display size</span></li>
       <li><strong>LinkedIn</strong> <span>Strict minimum of 1200×627px — shows nothing if smaller; uses 1.91:1</span></li>
