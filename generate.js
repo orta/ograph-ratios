@@ -61,9 +61,14 @@ for (const ratio of ratios) {
   <meta property="og:title" content="Aspect Ratio ${ratio.toFixed(1)}">
   <meta property="og:description" content="OpenGraph image with aspect ratio ${ratio.toFixed(1)} (${width}x${height}px)">
   <meta property="og:image" content="https://orta.github.io/ograph-ratios/${folder}/image.png">
+  <meta property="og:image:secure_url" content="https://orta.github.io/ograph-ratios/${folder}/image.png">
   <meta property="og:image:width" content="${width}">
   <meta property="og:image:height" content="${height}">
+  <meta property="og:image:type" content="image/png">
   <meta property="og:type" content="website">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="https://orta.github.io/ograph-ratios/${folder}/image.png">
+  <meta itemprop="image thumbnailUrl" content="https://orta.github.io/ograph-ratios/${folder}/image.png">
   <style>
     body { font-family: system-ui, sans-serif; max-width: 900px; margin: 40px auto; padding: 0 20px; background: #0f0f0f; color: #eee; }
     h1 { font-size: 2rem; margin-bottom: 4px; }
