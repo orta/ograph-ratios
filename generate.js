@@ -60,11 +60,13 @@ for (const ratio of ratios) {
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta property="og:title" content="Aspect Ratio ${ratio.toFixed(1)}">
   <meta property="og:description" content="OpenGraph image with aspect ratio ${ratio.toFixed(1)} (${width}x${height}px)">
+  <meta property="og:url" content="https://orta.github.io/ograph-ratios/${folder}/">
   <meta property="og:image" content="https://orta.github.io/ograph-ratios/${folder}/image.png">
   <meta property="og:image:secure_url" content="https://orta.github.io/ograph-ratios/${folder}/image.png">
   <meta property="og:image:width" content="${width}">
   <meta property="og:image:height" content="${height}">
   <meta property="og:image:type" content="image/png">
+  <meta property="og:image:alt" content="Aspect ratio ${ratio.toFixed(1)} test image (${width}x${height}px)">
   <meta property="og:type" content="website">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:image" content="https://orta.github.io/ograph-ratios/${folder}/image.png">
@@ -184,6 +186,8 @@ writeFileSync(
       <li><strong>Bluesky</strong> <span>Always constrained to ~1.4 ratio</span></li>
       <li><strong>Twitter</strong> <span>Supports a 2.0 ratio (2:1)</span></li>
       <li><strong>Facebook</strong> <span>Uses the aspect ratio to determine display size</span></li>
+      <li><strong>LinkedIn</strong> <span>Strict minimum of 1200×627px — shows nothing if smaller; uses 1.91:1</span></li>
+      <li><strong>WhatsApp</strong> <span>Caches aggressively; keep image under 300KB or it may not display</span></li>
     </ul>
   </div>
 </body>
