@@ -163,12 +163,26 @@ writeFileSync(
     }
     .ratio { font-size: 1.25rem; font-weight: 600; }
     .dims { font-size: 0.8rem; color: #666; }
+    .notes { margin-top: 48px; border-top: 1px solid #222; padding-top: 32px; }
+    .notes h2 { font-size: 1.1rem; margin-bottom: 16px; color: #aaa; }
+    .notes ul { list-style: none; display: flex; flex-direction: column; gap: 10px; }
+    .notes li { font-size: 0.9rem; line-height: 1.5; }
+    .notes li strong { color: #eee; display: inline-block; width: 72px; }
+    .notes li span { color: #888; }
   </style>
 </head>
 <body>
   <h1>OpenGraph Aspect Ratio Tester</h1>
   <p class="subtitle">Ratios from 0.3 (portrait) to 1.7 (landscape) — all images bounded to 800×800px. Click any card to view the og:image metadata page.</p>
   <div class="grid">${cards}
+  </div>
+  <div class="notes">
+    <h2>Platform notes</h2>
+    <ul>
+      <li><strong>Slack</strong> <span>Allows any aspect ratio</span></li>
+      <li><strong>Discord</strong> <span>Any aspect ratio; height appears capped and image right-aligns</span></li>
+      <li><strong>Bluesky</strong> <span>Always constrained to ~1.4 ratio</span></li>
+    </ul>
   </div>
 </body>
 </html>`
