@@ -60,7 +60,7 @@ for (const ratio of ratios) {
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta property="og:title" content="Aspect Ratio ${ratio.toFixed(1)}">
   <meta property="og:description" content="OpenGraph image with aspect ratio ${ratio.toFixed(1)} (${width}x${height}px)">
-  <meta property="og:image" content="./image.png">
+  <meta property="og:image" content="https://orta.github.io/ograph-ratios/${folder}/image.png">
   <meta property="og:image:width" content="${width}">
   <meta property="og:image:height" content="${height}">
   <meta property="og:type" content="website">
