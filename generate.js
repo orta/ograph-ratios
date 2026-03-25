@@ -3,9 +3,9 @@ import { execFileSync } from "child_process";
 import { mkdirSync, writeFileSync } from "fs";
 import { join } from "path";
 
-const ratios = Array.from({ length: 15 }, (_, i) =>
+const ratios = Array.from({ length: 23 }, (_, i) =>
   Math.round((0.3 + i * 0.1) * 10) / 10
-); // 0.3 to 1.7
+); // 0.3 to 2.5
 
 /** HSL → #rrggbb */
 function hslToHex(h, s, l) {
